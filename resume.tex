@@ -1,0 +1,172 @@
+% Acknowledgement: The below resume is based on aome510's resume [1]
+%
+% [1]: https://github.com/aome510/resume
+
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage{fontawesome5}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+	\vspace{-7pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt} ]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\linkDesc}[1]{\underline{\texttt{#1}}}
+
+\newcommand{\resumeItem}[2]{
+	\item\small{#1{: #2}} \vspace{-2pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2} \vspace{-2pt}}
+
+\newcommand{\resumeDescItem}[1]{\item[-]\small{#1} \vspace{-2pt}}
+\newcommand{\resumeDescItemNoBullet}[1]{\item[]\small{#1} \vspace{-2pt}}
+
+\newcommand{\resumeHeading}[4]{
+	\begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+	\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeListStart}{\vspace{-2pt}\begin{itemize}[leftmargin=*]}
+		\newcommand{\resumeListEnd}{\end{itemize}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\LARGE\textbf{Brian  Luu}
+	& \faIcon{mobile-alt} (+61) 431 888 818\\
+	\href{https://github.com/aome510}{\faIcon{github} nbonair}
+	\href{https://www.linkedin.com/in/nbonair/}{\faIcon{linkedin} nbonair}
+	& \href{mailto:lnnb.imc@gmail.com}{\faIcon{envelope} lnnb.imc@gmail.com}
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeHeading
+{Deakin University}{Burwood, VIC, Australia}
+{Bachelor of Computer Science }{March 19 - Jul 23}
+\resumeListStart
+\resumeDescItem {Specialization in Artificial Intelligence and Data Science.}
+\resumeDescItem{WAM: 82/100.}
+\resumeDescItem{Recipient of Deakin's International Student Scholarship.}
+\resumeListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeListStart
+
+\resumeSubheading
+{Buildmat Trade}{Dandenong South, VIC, Australia}
+{Data Engineer}{Jul 23 - now}
+\resumeListStart
+\resumeDescItem{Designed and refined a data pipeline to process semi-structured data, enabling the generation of insightful visualization reports crucial for informed business decision-making.}
+\resumeDescItem{Created specialized data scrapers utilizing Python libraries, expanding the data resources by 70\% and enabling timely insights for business analysis.}
+\resumeDescItem{Developed and managed a cloud-hosted PostgreSQL database using Python ORM and Amazon RDS, ensuring scalability real-time data accessibility.}
+\resumeDescItem{Developed API for database services, enabling cross-functional teams to efficiently manage and utilize data.}
+\resumeDescItem{Technologies implemented: Amazon RDS, SQLAlchemy ORM, FastAPI, Python, PowerBI }
+\resumeListEnd
+
+\resumeSubheading
+{Applied Artificial Intelligence Institute (A2I2)}{Burwood, VIC, Australia}
+{AI Engineer Intern}{March 23 - now}
+\resumeListStart
+\resumeDescItem{Developed a semantic search engine for expert identification, improving result accuracy by 15\% through a hybrid approach integrating Large Language Models, Graph-based Models, and Clustering Algorithms with custom datasets.}
+\resumeDescItem{Launched a beta web application that identifies experts and publications based on user queries, enables expert network generation from specified domains, long-text queries (abstract/section) and expert profiles.}
+\resumeDescItem{Models and algorithms implemented: Sentence-BERT, UMAP, HDBSCAN, PageRank.}
+\resumeDescItem{Framework and technologies implemented: TensorFlow, FastAPI, Neo4J, TryChroma, NetworkX.}
+\resumeListEnd
+
+\resumeSubheading
+{Department of Education and Training }{Melbourne, VIC, Australia}
+{Specialist Technician}{March 23 - now}
+\resumeListStart
+\resumeDescItem{Configured, managed and maintained curriculum and admin networks, servers and educational smart devices.}
+\resumeDescItem{Installed and managed hardware and software, introducing automation procedures that reduced administrative workload by over 25\%.}
+\resumeDescItem{Managed the Windows Server 2016 environment, MDM services, and Microsoft Intune Services, ensuring 99.9\% uptime and secure network operations}
+\resumeListEnd
+
+\resumeSubheading
+{Vega Corporation, }{Hanoi, Vietnam}
+{Software Engineer Intern}{June 18 - December 18}
+\resumeListStart
+\resumeDescItem{Contributed to the development and maintenance of features on a music streaming web application.}
+\resumeDescItem{Partnered with the testing team to validate product features, leading to a 20\% reduction in bugs and errors.}
+\resumeDescItem{Technologies implemented: React, Node.Js, MongoDB.}
+
+\resumeListEnd
+
+\resumeListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeListStart
+\resumeItem{\href{https://github.com/nbonair/Text-Captcha}{\linkDesc{Breaking Captcha}}}{A web tool enabling users to solve diverse CAPTCHA types with Computer Vision models, showcasing a practical application of AI in bypassing security challenges.}
+\vspace{-5pt}
+\resumeItem{\href{}{\linkDesc{RecycleNet}}}{A Streamlit application that employs a fine-tuned Vision Transformer model to classify recyclables according to Victoria's regulations, achieving 92\% accuracy on the TrashNet dataset. }
+\vspace{-5pt}
+\vspace{-5pt}
+\resumeListEnd
+
+% --------SKILLS------------
+\section{Skills}
+\resumeListStart
+\resumeSubItem{Languages}{Python, Javascript, C/C++}
+\resumeSubItem{Frameworks:}{TensorFlow, PyTorch, ORM, FastAPI, Flask, React.Js, Express.Js}
+\resumeSubItem{Tools}{Git, AWS, PostgreSQL, Docker, PowerBI, Postman}
+\resumeListEnd
+
+%-------------------------------------------
+\end{document}
